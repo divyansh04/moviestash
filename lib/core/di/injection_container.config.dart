@@ -80,18 +80,22 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i138.GetBookmarkedMovies(gh<_i382.MovieRepository>()));
     gh.lazySingleton<_i135.SearchMovies>(
         () => _i135.SearchMovies(gh<_i382.MovieRepository>()));
-    gh.factory<_i858.MovieDetailCubit>(() => _i858.MovieDetailCubit(
-          getMovieDetail: gh<_i338.GetMovieDetail>(),
-          bookmarkMovie: gh<_i138.BookmarkMovie>(),
-          removeBookmark: gh<_i138.RemoveBookmark>(),
+    gh.factory<_i833.SearchCubit>(() => _i833.SearchCubit(
+          searchMovies: gh<_i135.SearchMovies>(),
+          listenToBookmarkChanges: gh<_i516.ListenToBookmarkChanges>(),
+          getBookmarkedMovies: gh<_i138.GetBookmarkedMovies>(),
         ));
     gh.factory<_i671.BookmarksCubit>(() => _i671.BookmarksCubit(
           getBookmarkedMovies: gh<_i138.GetBookmarkedMovies>(),
           removeBookmark: gh<_i138.RemoveBookmark>(),
           listenToBookmarkChanges: gh<_i516.ListenToBookmarkChanges>(),
         ));
-    gh.factory<_i833.SearchCubit>(
-        () => _i833.SearchCubit(searchMovies: gh<_i135.SearchMovies>()));
+    gh.factory<_i858.MovieDetailCubit>(() => _i858.MovieDetailCubit(
+          getMovieDetail: gh<_i338.GetMovieDetail>(),
+          bookmarkMovie: gh<_i138.BookmarkMovie>(),
+          removeBookmark: gh<_i138.RemoveBookmark>(),
+          listenToBookmarkChanges: gh<_i516.ListenToBookmarkChanges>(),
+        ));
     gh.factory<_i535.HomeCubit>(() => _i535.HomeCubit(
           getTrendingMovies: gh<_i350.GetTrendingMovies>(),
           getNowPlayingMovies: gh<_i797.GetNowPlayingMovies>(),
