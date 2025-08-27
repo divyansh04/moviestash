@@ -170,24 +170,6 @@ dev_dependencies:
 
 ```
 
----
-
-## 🧠 Architecture
-
-- Clean Architecture
-  - Domain: pure business logic (entities, repo contracts, use cases)
-  - Data: Retrofit/Dio API, Hive cache, repository implementation
-  - Presentation: Cubits with tiny states and explicit transitions
-- Offline-first
-  - Lists cached and reconciled with bookmark store on every read (online/offline)
-  - Detail cached; isBookmarked reconciled on read and persisted after network fetch
-- Synchronization
-  - Repository broadcasts bookmark changes so dependent features can refresh or patch state
-- Navigation
-  - GoRouter + StatefulShellRoute + IndexedStack keep tab state persistent and support deep links
-
----
-
 ## 🔑 Setup
 
 1. **Clone the Repository**:
