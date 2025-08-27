@@ -10,10 +10,16 @@ Platforms:
 
 ## 🎥 Demo
 
-Add a video or GIF showcasing the app (Home, Search, Details, Bookmarks).
-- Tip: On GitHub, drag-and-drop a video/GIF into the README or link to a GitHub asset.
+https://github.com/user-attachments/assets/458b7642-74a0-43b3-ab31-ed784c3338e5
+
+https://github.com/user-attachments/assets/ad3887d0-05f3-4ba5-9b24-5d2fe8245920
+
+https://github.com/user-attachments/assets/3aa48abb-65a0-4d27-bad1-eab846a8033f
 
 ---
+
+
+
 
 ## 🌟 Features
 
